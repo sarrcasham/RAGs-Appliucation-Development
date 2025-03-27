@@ -8,7 +8,7 @@ from langchain_community.llms import HuggingFaceHub
 
 # Initialize environment
 load_dotenv()
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = ""
 
 def extract_text_from_pdf(pdf_path):
     reader = PdfReader(pdf_path)
@@ -22,7 +22,7 @@ def create_vector_store(text_chunks):
     return FAISS.from_texts(text_chunks, embeddings)
 
 # PDF processing
-pdf_path = r"C:\Users\Asarv\Downloads\DhruviAgarwal_Classof2026_HNLU.pdf"
+pdf_path = r"C:\Users\U.pdf"
 pdf_text = extract_text_from_pdf(pdf_path)
 
 text_splitter = RecursiveCharacterTextSplitter(

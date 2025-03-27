@@ -2,7 +2,7 @@
 # import os
 
 # # Set up Hugging Face credentials
-# os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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" 
+# os.environ["HUGGINGFACEHUB_API_TOKEN"] = "" 
 
 # llm = ChatOpenAI(
 #     model_name="tgi",
@@ -18,4 +18,4 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-print("GROQ_API_KEY exists:", "YES" if "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" in os.environ else "NO")
+print("GROQ_API_KEY exists:", "YES" if "" in os.environ else "NO")

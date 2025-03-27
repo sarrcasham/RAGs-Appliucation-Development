@@ -17,8 +17,8 @@ def split_text(text):
 
 load_dotenv()
 
-client = Groq(api_key="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")
-pdf_path = r"C:\Users\Asarv\Downloads\VectorEdge RAG Application Development Plan.pdf"
+client = Groq(api_key="")
+pdf_path = r"C:\Users\ Plan.pdf"
 pdf_text = extract_text_from_pdf(pdf_path)
 text_chunks = split_text(pdf_text)
 try:

@@ -8,7 +8,7 @@ from langchain_community.llms import HuggingFaceHub
 
 # Initialize environment
 load_dotenv()
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = ""
 
 def extract_text_from_csv(csv_path):
     # Suppress dtype warnings by setting low_memory=False

@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 # Initialize environment
 load_dotenv()
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = ""
 
 # Connect to the SQL database
 def connect_to_sql_database(db_uri):
